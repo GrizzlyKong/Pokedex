@@ -56,19 +56,43 @@ function renderChart(stats, pokemonDetails) {
         data: {
             labels: stats.map(stat => stat.stat.name),
             datasets: [{
-                label: 'Base Stats', 
+                label: 'Base Stats',
                 data: stats.map(stat => stat.base_stat),
                 backgroundColor: 'rgba(255, 0, 0, 0.5)',
                 borderColor: 'rgba(255, 0, 0, 1)',
-                borderWidth: 2
+                borderWidth: 2,
             }]
         },
         options: {
-            scale: {
-                    min: 0,
-                    max: 200,
-                    stepSize: 50
+    scales: {
+        r: { 
+            min: 0,
+            max: 200,
+            stepSize: 50,
+            pointLabels: {
+                color: 'black'
             },
+            ticks: {
+                font: {
+                    color: 'black'
+                }
+            },
+            grid: {
+                color: 'black'
+            }
+        }
+    },
+    elements: {
+        line: {
+            borderColor: 'black',
+            borderWidth: 3
+        },
+        point: {
+            backgroundColor: 'black',
+            borderColor: 'black',
+            borderWidth: 2
+        }
+    },
             responsive: false,
             maintainAspectRatio: false,
         }
