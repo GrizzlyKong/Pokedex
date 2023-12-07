@@ -1,0 +1,228 @@
+.loading {
+  display: flex;
+  align-items: center;
+  color: white;
+  position: fixed;
+  z-index: 51;
+  font-size: 5vh;
+}
+
+.loadingBall {
+  height: 40px;
+  animation: rotate 2s linear infinite;
+}
+
+.mewGif {
+  height: 20vh;
+  position: absolute;
+  top: 78%;
+  left: 0%;
+}
+
+.ashGif {
+  height: 5vh;
+}
+
+.pikachuGif {
+  height: 16vh;
+  position: absolute;
+  left: 1%;
+  top: 2%;
+}
+
+.blastoiseGif {
+  height: 18vh;
+  position: absolute;
+  right: 4%;
+  top: 3%;
+}
+
+.venusaurGif {
+  height: 16vh;
+  position: absolute;
+  right: 4%;
+  top: 81%;
+}
+
+.togepiGif {
+  height: 12vh;
+  position: absolute;
+  left: 46%;
+  top: 28%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.chartCanvas {
+  height: 76vh;
+  position: fixed;
+  left: 44%;
+  top: 13%;
+  z-index: 10;
+  background-color: white;
+  border-radius: 80px;
+  opacity: 0.9;
+  padding: 12px 50px 12px 12px;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resultsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 22vh 1.5rem 8vh 1.5rem;
+}
+
+.pokemonList {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin-left: 2rem;
+  height: 23rem;
+  margin-bottom: 3rem;
+  background-color: rgb(206, 10, 30);
+  border-style: solid;
+  border-radius: 16px;
+  border-width: 4px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.pokemonList2 {
+  position: fixed;
+  z-index: 10;
+  left: 6%;
+  bottom: 4.5%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  height: 34rem;
+  margin-bottom: 3rem;
+  background-color: rgb(206, 10, 30);
+  border-style: solid;
+  border-radius: 16px;
+  border-width: 4px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2), 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.pokemonList:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+}
+
+.pokemonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-style: solid;
+  border-radius: 16px;
+  border-width: 2px;
+  height: 22rem;
+  box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.2),
+    inset 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.pokemonContainer img {
+  height: 16rem;
+}
+
+.pokemonContainer img:hover {
+  transform: scale(1.1);
+  transition: transform 0.8s ease;
+}
+
+.pokemonContainerText {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.2rem 0rem 0rem 0rem;
+}
+
+.pokemonContainerText2 {
+  padding: 0rem 0rem 2rem 0rem;
+}
+
+.name,
+.nr,
+.type1,
+.type2,
+.height,
+.weight {
+  font-size: 19px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  color: white;
+  border-style: solid;
+  border-color: black;
+  border-radius: 16px;
+  border-width: 2px;
+  height: 2.5rem;
+  width: 10rem;
+  margin: 4px 4px 0 0;
+}
+
+.name,
+.nr,
+.height,
+.weight {
+  color: black;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-radius: 16px;
+  border-width: 2px;
+  height: 16rem;
+  width: 20.5rem;
+  padding: 12px;
+}
+
+#morePokemonButton {
+  position: relative;
+  height: 4rem;
+  width: 10rem;
+  left: 50%;
+  font-size: 18px;
+  margin-bottom: 6rem;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 4px;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgb(206, 10, 30);
+}

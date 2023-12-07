@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Pokédex</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleScript.css" />
+    <link rel="stylesheet" href="styleResponsiveDetails.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="template.js"></script>
+    <script src="script.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="icon/pikachu.png" />
+</head>
+
+<body id="pokedex" onload="loadPokemon()">
+  
+  <div id="overlay">
+    <div class="loading"><img class="ashGif" src="gif/ash.gif">&nbsp;&nbsp;Catching Pokémon...&nbsp;&nbsp;<img class="loadingBall" src="icon/ballIcon.png"></div>
+    <img class="mewGif" src="gif/mew.gif">
+    <img class="pikachuGif" src="gif/pikachu.gif">
+    <img class="blastoiseGif" src="gif/blastoise.gif">
+    <img class="venusaurGif" src="gif/venusaur.gif">
+    <img class="togepiGif" src="gif/togepi.gif">
+  </div>
+
+  <nav>
+
+  <div class="navLeft">
+    <p>Pokédex <img class="navBallImg" src="./icon/ballIcon.png"></p>
+    <span>Generations 1 & 2</span>
+  </div>
+
+  <div class="navRight">
+    <input id="input" class="input" placeholder="  Search by name..." oninput="handleInput()">
+    <img id="buttonTop" src="icon/arrowUp.png" class="buttonTop" onclick="scrollUp()">
+    <img src="icon/musicOn.png" id="buttonMusic" class="buttonMusic" onclick="toggleMusic()">
+  </div>
+
+  </nav>
+
+  <div id="resultsContainer"></div>
+  <div id="darkBackground"></div>
+
+</body>
+</html>

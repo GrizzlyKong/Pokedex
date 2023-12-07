@@ -1,0 +1,275 @@
+/*    1200px   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen and (max-width: 1200px) {
+  .pokemonList {
+    height: 21rem;
+  }
+
+  .pokemonList2 {
+    bottom: 12%;
+    height: 27.5rem;
+    width: 18.5rem;
+  }
+
+  .chartCanvas {
+    height: 60vh;
+    top: 20%;
+  }
+
+  .name,
+  .nr,
+  .type1,
+  .type2,
+  .height,
+  .weight {
+    font-size: 14px;
+    height: 1.5rem;
+    width: 8rem;
+  }
+
+  .description {
+    font-size: 13px;
+    margin-bottom: 24px;
+    position: relative;
+    bottom: 6%;
+    height: 2rem;
+    width: 16.5rem;
+  }
+}
+
+/*    1000px   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    font-size: 3rem;
+  }
+
+  nav span {
+    font-size: 0.8rem;
+  }
+
+  .navRight {
+    margin-right: 5%;
+  }
+
+  .input {
+    height: 1.2rem;
+    width: 14.5rem;
+    background-size: 10px;
+  }
+
+  .navBallImg {
+    height: 1rem;
+  }
+
+  .pokemonList {
+    height: 16.5rem;
+  }
+
+  .pokemonList2 {
+    height: 24rem;
+    width: 13rem;
+    bottom: 33%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+  }
+
+  .chartCanvas {
+    height: 34vh;
+    top: 64%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 32px;
+  }
+
+  .name,
+  .nr,
+  .type1,
+  .type2,
+  .height,
+  .weight {
+    font-size: 12px;
+    width: 5rem;
+  }
+
+  .pokemonContainer {
+    height: 15rem;
+  }
+
+  .pokemonContainer img {
+    height: 12rem;
+  }
+
+  .pokemonContainerText {
+    gap: 2rem;
+    padding: 0.5rem 0rem 0rem 0rem;
+  }
+
+  .description2 {
+    top: 4%;
+    bottom: 0%;
+    font-size: 11px;
+    width: 11.2rem;
+  }
+}
+
+/*    800px   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen and (max-width: 800px) {
+  .navRight {
+    gap: 4%;
+    margin-right: 7%;
+  }
+  .input {
+    width: 8rem;
+    font-size: 11px;
+    background-position-x: 7rem;
+  }
+
+  .buttonTop {
+    width: 2rem;
+  }
+
+  .buttonMusic {
+    width: 3rem;
+  }
+}
+
+/*    650px   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media only screen and (max-width: 650px) {
+  .navLeft span {
+    display: none;
+  }
+
+  .loading {
+    font-size: 1.6vh;
+    position: absolute;
+    left: 42%;
+    transform: translateX(-50%);
+  }
+
+  .loadingBall {
+    height: 24px;
+    position: absolute;
+    left: 106%;
+  }
+
+  .ashGif {
+    height: 3vh;
+    padding-right: 12px;
+  }
+  .togepiGif {
+    height: 7vh;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 37%;
+  }
+
+  .pikachuGif {
+    height: 8vh;
+  }
+
+  .blastoiseGif {
+    height: 8vh;
+    position: absolute;
+    right: 11%;
+    top: 2%;
+  }
+
+  .venusaurGif {
+    height: 8vh;
+    position: absolute;
+    right: 10%;
+    top: 80%;
+  }
+
+  .mewGif {
+    height: 10vh;
+    position: absolute;
+    top: 76%;
+    left: 0%;
+  }
+
+  /*    560px   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  @media only screen and (max-width: 560px) {
+    nav {
+      font-size: 2rem;
+    }
+  }
+
+  /*    470px   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+  @media only screen and (max-width: 470px) {
+    .input {
+      position: absolute;
+      top: 7vh;
+      left: 2vw;
+      height: 1.2rem;
+      width: 10rem;
+      background-position-x: 9rem;
+    }
+
+    .buttonTop {
+      width: 1.8rem;
+      position: absolute;
+      right: 14vw;
+      top: 7vh;
+    }
+
+    .buttonMusic {
+      position: absolute;
+      right: 11vw;
+      bottom: 4vh;
+    }
+
+    .pokemonList {
+      height: 15.5rem;
+      width: 14rem;
+      margin-left: 0;
+      padding: 1rem;
+      align-items: center;
+    }
+
+    .pokemonList2 {
+      bottom: 30%;
+      height: 23rem;
+      width: 13rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .name,
+    .nr,
+    .type1,
+    .type2,
+    .height,
+    .weight {
+      font-size: 9px;
+      width: 5rem;
+      padding-right: 10px;
+    }
+
+    .chartCanvas {
+      height: 32vh;
+      top: 66%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .pokemonContainer img {
+      height: 11rem;
+    }
+
+    .pokemonContainerText {
+      gap: 1rem;
+    }
+
+    .description {
+      width: 11rem;
+      font-size: 12px;
+    }
+  }
+}
