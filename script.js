@@ -127,7 +127,7 @@ function handleInput() {
       .querySelector(".name")
       .innerText.toLowerCase();
 
-    if (pokemonName.startsWith(inputValue)) {
+    if (pokemonName.includes(inputValue)) {
       container.style.display = "flex";
     } else {
       container.style.display = "none";
